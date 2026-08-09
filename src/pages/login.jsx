@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { AuthLayout } from "../components/auth/authLayout"
+import { AuthLayout } from "../layout/authLayout"
 import { ButtonAuth } from "../components/ui/buttonAuth"
 import { InputAuth } from "../components/ui/inputAuth"
 import { LabelAuth } from "../components/ui/labelAuth"
