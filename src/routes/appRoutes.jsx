@@ -3,6 +3,7 @@ import { AuthLayout } from "../layout/authLayout"
 import { Login } from "../pages/login"
 import { Home } from "../pages/home"
 import MainLayout from "../layout/mainLayout"
+import { PlaylistPage } from "@/pages/playlist"
 export default function AppRoutes() {
     return (
         <BrowserRouter>
@@ -12,6 +13,7 @@ export default function AppRoutes() {
                 </Route>
                 <Route path="/" element={<MainLayout/>}>
                     <Route index element={<Home/>}/>
+                    <Route path="playlist" element={<PlaylistPage/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>        

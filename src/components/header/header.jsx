@@ -1,4 +1,4 @@
-import { ButtonHeader } from "./header/buttonHeader";
+import { ButtonHeader } from "./buttonHeader";
 
 export function Header() {
     return(

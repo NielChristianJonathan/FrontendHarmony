@@ -1,6 +1,7 @@
-import { Plus } from "lucide-react";
+import { ListPlus, Plus,  } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { DropDownCard } from "./dropDownCard";
+import description from "../../constant/description"
 
 export function AddButton() {
     return(
@@ -12,9 +13,10 @@ export function AddButton() {
                     ></Plus>
                 </div>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
-                <div>
-                    <DropDownCard></DropDownCard>
+            
+            <DropdownMenuContent className={"bg-zinc-800 w-96"}>
+                <div className=" w-full">
+                    <DropDownCard Logo={ListPlus} title={"Playlist"} description={description.addPlaylist}></DropDownCard>
                 </div>
             </DropdownMenuContent>
         </DropdownMenu>

@@ -15,13 +15,13 @@ export function Login() {
     });
 
     return (
-        <AuthLayout>
+        <div>
             <TitleAuth title={"Login"}></TitleAuth>
             <LabelAuth label="Username" htmlFor="username" />
             <InputAuth type="text" value={username} error={errors.username} setValue={setUsername} placeholder={"Masukan username..."} id="username"></InputAuth>
             <LabelAuth label="Password" htmlFor="password" />
             <InputAuth type="password" value={password} setValue={setPassword} placeholder={"Masukan password..."} id="password"></InputAuth>
             <ButtonAuth label="Login" onClick={() => handleLogin({username, password})}/>
-        </AuthLayout>
+        </div>
     )
 }
