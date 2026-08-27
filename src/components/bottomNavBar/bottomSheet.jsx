@@ -3,6 +3,7 @@ import { Drawer, DrawerContent, DrawerTrigger } from "../ui/drawer";
 import { DrawerList } from "./drawerList";
 
 export function BottomSheet() {
+
     return (
         <Drawer swipeDirection="down" className={"md:hidden"}>
             <DrawerTrigger>
@@ -12,10 +13,12 @@ export function BottomSheet() {
                 <DrawerList 
                     title={"Playlist"} 
                     description={"Buat Playlist berisi lagu atau episode"}
+                    path={"/playlist"}
                 />
                 <DrawerList 
                     title={"Lagu"} 
                     description={"Tambahkan lagu anda"}
+                    path={"/addsong"}
                 />
                 
             </DrawerContent>

@@ -4,7 +4,7 @@ export function DropDownCard({Logo, description, title, path}) {
     const navigate = useNavigate();
     return(
         <div
-            className="flex items-center w-96 gap-3 px-2"
+            className="flex items-center w-96 gap-3 px-2 py-2 cursor-pointer rounded hover:bg-zinc-600"
             onClick={() => navigate(path)}
         >
             <Logo color="#f1f1f1" size={24} className="shrink-0"></Logo>

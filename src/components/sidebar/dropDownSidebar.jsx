@@ -1,4 +1,4 @@
-import { ListPlus, Plus,  } from "lucide-react";
+import { ListPlus, Music4, Plus,  } from "lucide-react";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from "../ui/dropdown-menu";
 import { DropDownCard } from "./dropDownCard";
 import description from "../../constant/description"
@@ -15,8 +15,9 @@ export function AddButton() {
             </DropdownMenuTrigger>
             
             <DropdownMenuContent className={"bg-zinc-800 w-96"}>
-                <div className=" w-full">
-                    <DropDownCard Logo={ListPlus} title={"Playlist"} description={description.addPlaylist}></DropDownCard>
+                <div className="w-full my-2">
+                    <DropDownCard Logo={ListPlus} title={"Playlist"} description={description.addPlaylist} path={"/playlist"}></DropDownCard>
+                    <DropDownCard Logo={Music4} title={"Song"} description={description.addSong} path={"/addsong"}></DropDownCard>
                 </div>
             </DropdownMenuContent>
         </DropdownMenu>
