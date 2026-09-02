@@ -6,10 +6,10 @@ import { HeaderSidebar } from "./headerSidebar";
 
 export function SidebarHarmony() {
     const [width, setWidth] = useState(256);
-    const [isCollapse, setIsCollapse] = useState(false);
+    const [setIsCollapse] = useState(false);
     const MIN_WIDTH = 256;
     const MAX_WIDTH = 400;
-    console.log(`opendsidebar: ${isCollapse}`)
+
 
     function handleMouseDown(event) {
         const startX = event.clientX

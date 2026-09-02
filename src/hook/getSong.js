@@ -7,7 +7,6 @@ export async function getSong(accessToken) {
                 Authorization: `Bearer ${accessToken}`
             }
         });
-        console.log(response)
         return response.data
     } catch (error) {
         console.log(error);
