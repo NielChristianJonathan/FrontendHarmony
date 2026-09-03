@@ -17,12 +17,11 @@ api.interceptors.response.use(
     async function(error) {
         const OriginalRequest = error.config;
         if (error.response?.status === 401 && OriginalRequest._retry !== true) {
-            console.log("Masukkkk")
             const response = await api.get(`${BASE_URL}/api/auth/accesstoken`);
             const newAccessToken = response.data.data.accessToken;
             userStore.getState().setAccessToken(newAccessToken);
             OriginalRequest._retry = true;
-            OriginalRequest.headers.headers.Authorization = `Bearer ${newAccessToken}`;
+            OriginalRequest.headers.authorization = `Bearer ${newAccessToken}`;
             return api(OriginalRequest)
         }
         return Promise.reject(error)
